@@ -1,0 +1,117 @@
+// Progress bar load animation
+.progress-bar {
+  width: 0;
+  animation: progress 1.5s ease-in-out forwards;
+  span {
+    opacity: 0;
+    animation: show 0.35s forwards ease-in-out 0.5s;
+  }
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 0px #333;
+}
+
+.big-badge {
+  width: 100px;
+}
+
+.total-score {
+  width: 90px;
+}
+
+@keyframes progress {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.relative-item {
+  position: relative;
+}
+
+.indicator {
+  position: absolute;
+  z-index: 5;
+  height: 26px;
+  top: -4px;
+  .btn {
+    position: absolute;
+    right: -12px;
+    line-height: 0;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px #fff;
+    color: #5a3ee0;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+}
+
+// List Group borders correction
+@media (min-width: 768px) {
+  .cognitive-results {
+    .list-group {
+      border: 0;
+      .list-group-item {
+        &:nth-child(odd) {
+          border-right: 1px solid rgba(0, 0, 0, 0.125);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        }
+        &:nth-child(2) {
+          border-top: none;
+        }
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+.fa-uxs {
+  font-size: 0.5em;
+}
+
+._btn-circle {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  padding: 0;
+  border-radius: 50%;
+}
+
+._btn-circle i {
+  position: relative;
+  top: -1px;
+}
+
+._btn-circle-sm {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 0.9rem;
+}
+
+.without_slider::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  background: none !important;
+}
+
+.without_slider::-moz-range-thumb {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  background: none !important;
+}
