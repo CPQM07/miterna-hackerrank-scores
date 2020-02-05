@@ -1,10 +1,10 @@
 import React from "react";
-import EnrollmentScores from "tests-scores";
+import HackerRankScores from "tests-scores";
 
 const App = props => {
   return (
     <div>
-      <EnrollmentScores />
+      <HackerRankScores />
     </div>
   );
 };

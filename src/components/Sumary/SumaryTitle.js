@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import _ from "lodash";
-import ScoreRadalChart from "../Score/ScoreRadalChart";
+// import ScoreRadalChart from "../Score/ScoreRadalChart";
 
-const DeveloperTitle = ({ title, enrollmentId, skills }) => {
+const SumaryTitle = ({ title, enrollmentId, skills }) => {
   const [toggle, setToggle] = useState(false);
   const drawInfoText = () => (toggle ? "ver menos" : "ver más");
 
@@ -33,4 +33,4 @@ const DeveloperTitle = ({ title, enrollmentId, skills }) => {
   );
 };
 
-export default DeveloperTitle;
+export default SumaryTitle;

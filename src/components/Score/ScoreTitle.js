@@ -1,11 +1,15 @@
 import React from "react";
 
-const ScoreTitle = ({ name, description, tooltip }) => {
+const ScoreTitle = ({ name, score, maxScore }) => {
   return (
-    <div className="d-flex justify-content-between align-items-center my-2">
+    <div className="d-flex justify-content-between align-items-center">
       <div className="d-block">
         <h5 className="text-capitalize h6 mb-0">{name}</h5>
-        <small className="text-muted d-block text-justify">description</small>
+        {score && maxScore ? (
+          <small className="text-muted d-block text-justify">
+            {score} / {maxScore} points
+          </small>
+        ) : null}
       </div>
 
       <span

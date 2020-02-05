@@ -3,14 +3,11 @@ import _ from "lodash";
 
 import Header from "./components/Header";
 import DeveloperCard from "./components/Developer/DeveloperCard";
-
-import "./scss/enrollments.scss";
+import SumaryCard from "./components/Sumary/SumaryCard";
 
 import data from "./scores/enrollment";
 
-const EnrollmentScores = props => {
-  // const { data } = props;
-
+const HackerRankScores = props => {
   return (
     <div className="container">
       <Header
@@ -20,12 +17,21 @@ const EnrollmentScores = props => {
           score: data.score
         }}
       />
-      <div className="row">
+      <div className="row justify-content-md-center">
         {!_.isEmpty(data.developer_skills) ? (
-          <div className="col">
+          <div className="col-sm-12 col-md-6">
             <DeveloperCard
               enrollmentId={data.enrollment_id}
               skills={data.developer_skills}
+            />
+          </div>
+        ) : null}
+
+        {!_.isEmpty(data.test_sumary) ? (
+          <div className="col-sm-12 col-md-6">
+            <SumaryCard
+              enrollmentId={data.enrollment_id}
+              details={data.test_sumary}
             />
           </div>
         ) : null}
@@ -34,4 +40,4 @@ const EnrollmentScores = props => {
   );
 };
 
-export default EnrollmentScores;
+export default HackerRankScores;

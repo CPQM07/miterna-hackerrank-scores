@@ -2,13 +2,11 @@ import React from "react";
 import ScoreCompleted from "./ScoreCompleted";
 import ScoreAwaiting from "./ScoreAwaiting";
 
-const ScoreBar = ({ score, maxScore, percentage }) => {
-  if (!score) {
+const ScoreBar = ({ percentage }) => {
+  if (!percentage) {
     return <ScoreAwaiting />;
   }
-  return (
-    <ScoreCompleted score={score} maxScore={maxScore} percentage={percentage} />
-  );
+  return <ScoreCompleted percentage={percentage} />;
 };
 
 export default ScoreBar;

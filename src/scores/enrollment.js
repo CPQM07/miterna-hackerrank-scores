@@ -18,29 +18,29 @@ export default {
   },
   developer_skills: {
     Easy: {
-      score: 55.0,
+      score: 45,
       max_score: 55.0,
-      percentage_score: 100.0
+      percentage_score: 87
     },
     Algorithms: {
-      score: 125.0,
+      score: 100,
       max_score: 125.0,
       percentage_score: 100.0
     },
     Arrays: {
-      score: 120.0,
+      score: 98,
       max_score: 120.0,
-      percentage_score: 100.0
+      percentage_score: 65
     },
     "Core Skills": {
-      score: 55.0,
+      score: 25,
       max_score: 55.0,
-      percentage_score: 100.0
+      percentage_score: 98
     },
     "Problem Solving": {
-      score: 55.0,
+      score: 10,
       max_score: 55.0,
-      percentage_score: 100.0
+      percentage_score: 25
     }
   },
   test_sumary: {

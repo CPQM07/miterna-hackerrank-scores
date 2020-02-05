@@ -1,9 +1,6 @@
 import React from "react";
 import moment from "moment";
 
-import CompletedInfo from "./TestNumber/CompletedInfo";
-import Profile from "./Profile/Profile";
-
 const Header = ({ info: { additional, personal, score } }) => {
   return (
     <div className="d-flex align-items-center justify-content-around text-bold m-4">
@@ -22,7 +19,7 @@ const Header = ({ info: { additional, personal, score } }) => {
           {moment(additional.invited_at).format("D MMMM YYYY")}
         </strong>
         <small className="d-block text-muted">
-          Duración Test: {additional.total_time_taken}
+          Duración Total del Test: {additional.total_time_taken}
         </small>
       </span>
     </div>
