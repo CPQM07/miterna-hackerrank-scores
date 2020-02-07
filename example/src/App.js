@@ -1,11 +1,6 @@
 import React from "react";
 import HackerRankScores from "tests-scores";
 
-const App = props => {
-  return (
-    <div>
-      <HackerRankScores />
-    </div>
-  );
-};
+const App = props => <HackerRankScores />;
+
 export default App;

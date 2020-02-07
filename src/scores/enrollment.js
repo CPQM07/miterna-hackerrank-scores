@@ -58,7 +58,20 @@ export default {
       type: "code",
       max_score: 75.0,
       time_taken: "30 min",
-      tags: ["Easy", "Problem Solving", "Algorithm"]
+      tags: [
+        "Easy",
+        "Problem Solving",
+        "Algorithm",
+        "Easy",
+        "Problem Solving",
+        "Algorithm",
+        "Easy",
+        "Problem Solving",
+        "Algorithm",
+        "Easy",
+        "Problem Solving",
+        "Algorithm"
+      ]
     },
     "304914": {
       score: 5.0,

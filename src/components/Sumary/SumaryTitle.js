@@ -1,7 +1,7 @@
 import React from "react";
-import _ from "lodash";
 import TestCompleted from "../TestNumber/TestCompleted";
 import TestInProgress from "../TestNumber/TestInProgress";
+import _ from "lodash";
 
 const SumaryTitle = ({ title, enrollmentId, details }) => {
   const hasDetails = !_.isEmpty(details);
