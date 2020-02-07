@@ -13,7 +13,7 @@ const chartOptions = labels => ({
     },
     plotOptions: {
       radar: {
-        size: 140,
+        size: 130,
         polygons: {
           strokeColor: "#e9e9e9",
           fill: {

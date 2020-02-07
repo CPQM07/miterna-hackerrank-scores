@@ -45,15 +45,15 @@ export default {
   },
   test_sumary: {
     "309954": {
-      score: 50.0,
+      score: 12.0,
       name: "Buying Show Tickets",
       type: "code",
-      max_score: 50.0,
+      max_score: 42.0,
       time_taken: "30 min",
       tags: ["Easy", "Problem Solving", "Algorithm"]
     },
     "111168": {
-      score: 75.0,
+      score: 12.0,
       name: "Distinct Pairs",
       type: "code",
       max_score: 75.0,
@@ -64,12 +64,12 @@ export default {
       score: 5.0,
       name: "Sample MCQ",
       type: "mcq",
-      max_score: 5.0,
+      max_score: 15.0,
       time_taken: "30 min",
       tags: ["Easy", "Problem Solving", "Algorithm"]
     },
     "304912": {
-      score: 5.0,
+      score: 3.0,
       name: "Sample MCQ 2",
       type: "mcq",
       max_score: 5.0,
